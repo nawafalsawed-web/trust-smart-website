@@ -37,7 +37,7 @@ body::before{content:"";position:fixed;inset:0;z-index:9998;pointer-events:none;
 .band{background:var(--brand);color:var(--paper);display:flex;align-items:center;
   justify-content:space-between;padding:clamp(18px,2.4vw,30px) clamp(20px,3vw,40px);gap:var(--sp-5)}
 .band.deep{background:var(--deep)}
-.band h2{font-size:var(--fs-h2);font-weight:900;color:var(--paper)}
+.band h2{font-size:var(--fs-h2);font-weight:800;color:var(--paper)}
 .band .orn{display:flex;gap:16px;opacity:.9;flex:none}
 .band .orn svg{width:26px;height:26px}
 
@@ -101,7 +101,7 @@ body::before{content:"";position:fixed;inset:0;z-index:9998;pointer-events:none;
 .sheet.s2{inset-inline-end:-6%;bottom:-10%;width:30%;height:44%;background:var(--c-100);opacity:.7}
 .sheet.s3{inset-inline-end:-4%;top:-6%;width:38%;height:62%;background:var(--deep);opacity:.06}
 .hero .wrap{position:relative;z-index:3;width:100%}
-.hero h1{font-size:var(--fs-mega);font-weight:900;line-height:1.16;letter-spacing:-.02em}
+.hero h1{font-size:var(--fs-mega);font-weight:800;line-height:1.16;letter-spacing:-.02em}
 .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.16em;margin-bottom:-.14em}
 .hero h1 .ln>span{display:block;transform:translateY(105%);animation:rise .9s var(--ease) forwards}
 .hero h1 .ln:nth-child(2)>span{animation-delay:.12s}
@@ -125,7 +125,7 @@ body::before{content:"";position:fixed;inset:0;z-index:9998;pointer-events:none;
 .kpi{padding:var(--sp-6) var(--sp-5);border-inline-start:1px solid var(--line)}
 .kpi:first-child{border-inline-start:0}
 .kpi b{display:block;font-family:var(--font-display);font-size:clamp(2.2rem,4.6vw,3.6rem);
-  font-weight:900;line-height:1;direction:ltr;text-align:right}
+  font-weight:800;line-height:1;direction:ltr;text-align:right}
 .kpi b sup{font-size:.32em;color:var(--brand-2);vertical-align:.9em}
 .kpi span{display:block;font-size:var(--fs-sm);font-weight:700;color:var(--ink-3);margin-top:10px}
 @media(max-width:760px){.kpis{grid-template-columns:1fr 1fr}
@@ -180,7 +180,7 @@ body::before{content:"";position:fixed;inset:0;z-index:9998;pointer-events:none;
   border-bottom:1px solid var(--line);cursor:pointer;transition:.4s var(--ease)}
 .work:hover{padding-inline-start:22px}
 .work .wn{font-size:12px;font-weight:800;color:var(--ink-3);direction:ltr;width:30px;flex:none}
-.work h3{font-size:clamp(1.3rem,3vw,2.4rem);font-weight:900;flex:none;transition:.4s var(--ease)}
+.work h3{font-size:clamp(1.3rem,3vw,2.4rem);font-weight:800;flex:none;transition:.4s var(--ease)}
 .work:hover h3{color:var(--brand)}
 .work .wt{font-size:var(--fs-sm);color:var(--ink-3);flex:1}
 .work .wk{font-size:var(--fs-sm);font-weight:800;color:var(--brand);direction:ltr;flex:none}
@@ -194,7 +194,7 @@ body::before{content:"";position:fixed;inset:0;z-index:9998;pointer-events:none;
 .infgrid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(30px,5vw,80px);align-items:center}
 .infgrid>*{min-width:0}
 @media(max-width:900px){.infgrid{grid-template-columns:1fr}}
-.bigno{font-family:var(--font-display);font-size:clamp(4rem,12vw,9rem);font-weight:900;
+.bigno{font-family:var(--font-display);font-size:clamp(4rem,12vw,9rem);font-weight:800;
   line-height:.9;direction:ltr;text-align:right}
 .bigno sup{font-size:.26em;color:var(--brand-2);vertical-align:.9em}
 .bars{display:grid;gap:var(--sp-4);margin-top:var(--sp-6)}
@@ -247,7 +247,7 @@ body::before{content:"";position:fixed;inset:0;z-index:9998;pointer-events:none;
 .model:hover{background:var(--brand);color:var(--paper);transform:translateY(-6px);box-shadow:var(--sh-3)}
 .model .mn{font-size:12px;font-weight:800;color:var(--brand-2);direction:ltr;letter-spacing:.2em}
 .model:hover .mn{color:var(--c-100)}
-.model h3{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;margin:14px 0 16px}
+.model h3{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin:14px 0 16px}
 .model p{font-size:var(--fs-sm);color:var(--ink-2);line-height:1.85}
 .model:hover p{color:rgba(243,239,224,.86)}
 .model ul{list-style:none;padding:0;margin:20px 0 0;font-size:var(--fs-sm);display:grid;gap:8px}
@@ -569,8 +569,8 @@ footer .in{position:relative;z-index:2}
       <h2 style="font-size:var(--fs-h1);max-width:20ch"
           data-en="Films made for a goal, not to fill a screen">أفلام تُصنع لهدف، لا لتملأ الشاشة.</h2>
       <div style="display:flex;gap:var(--sp-7)">
-        <div><div style="font-family:var(--font-display);font-size:2.4rem;font-weight:900;direction:ltr;line-height:1">7,195<sup style="font-size:.3em;color:var(--brand-2)">+</sup></div><span style="font-size:var(--fs-sm);color:var(--ink-3)" data-en="videos">فيديو</span></div>
-        <div><div style="font-family:var(--font-display);font-size:2.4rem;font-weight:900;direction:ltr;line-height:1">250<sup style="font-size:.3em;color:var(--brand-2)">M+</sup></div><span style="font-size:var(--fs-sm);color:var(--ink-3)" data-en="views">مشاهدة</span></div>
+        <div><div style="font-family:var(--font-display);font-size:2.4rem;font-weight:800;direction:ltr;line-height:1">7,195<sup style="font-size:.3em;color:var(--brand-2)">+</sup></div><span style="font-size:var(--fs-sm);color:var(--ink-3)" data-en="videos">فيديو</span></div>
+        <div><div style="font-family:var(--font-display);font-size:2.4rem;font-weight:800;direction:ltr;line-height:1">250<sup style="font-size:.3em;color:var(--brand-2)">M+</sup></div><span style="font-size:var(--fs-sm);color:var(--ink-3)" data-en="views">مشاهدة</span></div>
       </div>
     </div>
     <div class="gal rv">

@@ -9,11 +9,11 @@
 body{background:var(--paper)}
 .wrap{max-width:1100px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
 header.top{background:var(--dark);color:var(--paper);padding:clamp(50px,7vw,90px) 0 clamp(40px,5vw,64px);margin-bottom:var(--sp-9)}
-header.top h1{font-size:var(--fs-display);font-weight:900}
+header.top h1{font-size:var(--fs-display);font-weight:800}
 header.top p{color:rgba(243,239,224,.7);margin-top:14px;max-width:56ch}
 .eb{font-size:var(--fs-label);letter-spacing:.32em;font-weight:800;color:var(--brand-2);direction:ltr;display:block;margin-bottom:12px}
 section{margin-bottom:var(--sp-9)}
-section>h2{font-size:var(--fs-h2);font-weight:900;padding-bottom:14px;border-bottom:2px solid var(--brand);margin-bottom:var(--sp-6)}
+section>h2{font-size:var(--fs-h2);font-weight:800;padding-bottom:14px;border-bottom:2px solid var(--brand);margin-bottom:var(--sp-6)}
 .note{font-size:var(--fs-sm);color:var(--ink-3);margin-bottom:var(--sp-5)}
 .ramp{display:grid;grid-template-columns:repeat(10,1fr);margin-bottom:var(--sp-5);border:1px solid var(--line)}
 .ramp i{aspect-ratio:1;display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;
@@ -31,7 +31,7 @@ section>h2{font-size:var(--fs-h2);font-weight:900;padding-bottom:14px;border-bot
 .btn:hover{background:transparent;color:var(--brand)}
 .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
 .band{background:var(--brand);color:var(--paper);display:flex;align-items:center;justify-content:space-between;padding:22px 30px}
-.band h3{font-size:var(--fs-h3);color:var(--paper);font-weight:900}
+.band h3{font-size:var(--fs-h3);color:var(--paper);font-weight:800}
 .sp{display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap}
 .sp i{background:var(--c-200);display:block;position:relative}
 .sp i::after{content:attr(data-n);position:absolute;top:-20px;inset-inline-start:0;font-size:10px;color:var(--ink-3);font-style:normal;direction:ltr}
@@ -73,10 +73,10 @@ footer{background:var(--brand);color:var(--paper);padding:40px 0;margin-top:var(
 
 <section>
   <h2>الخطوط</h2>
-  <p class="note">ثمانية (Thmanyah) للعناوين، المُرعي (Almarai) للنصوص. الأحجام كلها <code style="direction:ltr">clamp()</code> تستجيب لعرض الشاشة.</p>
-  <div class="tx"><div class="spec"><span class="lbl">--fs-mega</span><span style="font-family:var(--font-display);font-size:var(--fs-mega);font-weight:900;line-height:1">نمو يُقاس</span></div></div>
-  <div class="tx"><div class="spec"><span class="lbl">--fs-h1</span><span style="font-family:var(--font-display);font-size:var(--fs-h1);font-weight:900">عنوان قسم رئيسي</span></div></div>
-  <div class="tx"><div class="spec"><span class="lbl">--fs-h2</span><span style="font-family:var(--font-display);font-size:var(--fs-h2);font-weight:900">عنوان شريط</span></div></div>
+  <p class="note">المُرعي (Almarai) للعناوين والنصوص، نفس خط البروفايل. الأحجام كلها <code style="direction:ltr">clamp()</code> تستجيب لعرض الشاشة.</p>
+  <div class="tx"><div class="spec"><span class="lbl">--fs-mega</span><span style="font-family:var(--font-display);font-size:var(--fs-mega);font-weight:800;line-height:1">نمو يُقاس</span></div></div>
+  <div class="tx"><div class="spec"><span class="lbl">--fs-h1</span><span style="font-family:var(--font-display);font-size:var(--fs-h1);font-weight:800">عنوان قسم رئيسي</span></div></div>
+  <div class="tx"><div class="spec"><span class="lbl">--fs-h2</span><span style="font-family:var(--font-display);font-size:var(--fs-h2);font-weight:800">عنوان شريط</span></div></div>
   <div class="tx"><div class="spec"><span class="lbl">--fs-h3</span><span style="font-family:var(--font-display);font-size:var(--fs-h3);font-weight:800">عنوان بند</span></div></div>
   <div class="tx"><div class="spec"><span class="lbl">--fs-lead</span><span style="font-size:var(--fs-lead);font-weight:300">فقرة تمهيدية بوزن خفيف تشرح الفكرة في سطرين.</span></div></div>
   <div class="tx"><div class="spec"><span class="lbl">--fs-body</span><span>نص الجسم الافتراضي بارتفاع سطر ١٫٨ للقراءة المريحة بالعربي.</span></div></div>
@@ -112,9 +112,9 @@ footer{background:var(--brand);color:var(--paper);padding:40px 0;margin-top:var(
 
   <span class="eb">KPI · رقم</span>
   <div style="border-top:2px solid var(--brand);padding-top:26px;display:flex;gap:60px;flex-wrap:wrap">
-    <div><b style="display:block;font-family:var(--font-display);font-size:3rem;font-weight:900;line-height:1;direction:ltr;text-align:right">742<sup style="font-size:.32em;color:var(--brand-2);vertical-align:.9em">+</sup></b>
+    <div><b style="display:block;font-family:var(--font-display);font-size:3rem;font-weight:800;line-height:1;direction:ltr;text-align:right">742<sup style="font-size:.32em;color:var(--brand-2);vertical-align:.9em">+</sup></b>
       <span style="font-size:var(--fs-sm);font-weight:700;color:var(--ink-3)">عميل</span></div>
-    <div><b style="display:block;font-family:var(--font-display);font-size:3rem;font-weight:900;line-height:1;direction:ltr;text-align:right">250<sup style="font-size:.32em;color:var(--brand-2);vertical-align:.9em">M+</sup></b>
+    <div><b style="display:block;font-family:var(--font-display);font-size:3rem;font-weight:800;line-height:1;direction:ltr;text-align:right">250<sup style="font-size:.32em;color:var(--brand-2);vertical-align:.9em">M+</sup></b>
       <span style="font-size:var(--fs-sm);font-weight:700;color:var(--ink-3)">مشاهدة</span></div>
   </div>
 </section>
