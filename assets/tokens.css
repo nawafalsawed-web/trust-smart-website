@@ -47,7 +47,7 @@
   --font-body:Almarai,system-ui,sans-serif;
 
   /* ---------- سلّم الحجم ---------- */
-  --fs-mega:clamp(3rem,9vw,8.5rem);
+  --fs-mega:clamp(3rem,8vw,5.6rem);
   --fs-display:clamp(2.4rem,6vw,5rem);
   --fs-h1:clamp(2rem,4.2vw,3.4rem);
   --fs-h2:clamp(1.6rem,3vw,2.5rem);
