@@ -1,0 +1,85 @@
+/* ============================================================
+   TRUST SMART — Design Tokens v1.0
+   أسلوب مطبعي ورقي: كريمي + تراكوتا + إسبريسو
+   مصدر واحد للحقيقة للموقع وشيت نظام التصميم
+   ============================================================ */
+
+@font-face{font-family:Almarai;src:url('fonts/Almarai-Light.ttf') format('truetype');font-weight:300;font-display:swap}
+@font-face{font-family:Almarai;src:url('fonts/Almarai-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:Almarai;src:url('fonts/Almarai-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:Almarai;src:url('fonts/Almarai-ExtraBold.ttf') format('truetype');font-weight:800;font-display:swap}
+@font-face{font-family:Thmanyah;src:url('fonts/thmanyah-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Thmanyah;src:url('fonts/thmanyah-Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:Thmanyah;src:url('fonts/thmanyah-Black.woff2') format('woff2');font-weight:900;font-display:swap}
+
+:root{
+  /* ---------- تراكوتا / اللون الأساسي ---------- */
+  --c-50:#FBF2EE; --c-100:#F3DED5; --c-200:#E6BCAB; --c-300:#D2917A; --c-400:#B8593D;
+  --c-500:#8A3D27; --c-600:#74331F; --c-700:#5C2818; --c-800:#431D12; --c-900:#2C130C;
+
+  /* ---------- إسبريسو / الحبر ---------- */
+  --e-50:#F0EDE9; --e-100:#DDD6CE; --e-200:#BAAE9F; --e-300:#8E7F6C; --e-400:#584839;
+  --e-500:#2A1D14; --e-600:#241A11; --e-700:#1D140D; --e-800:#150E08; --e-900:#0B0705;
+
+  /* ---------- ورق / الحياد ---------- */
+  --w-50:#FBF9F2; --w-100:#F3EFE0; --w-200:#EAE4D2; --w-300:#DDD5BE; --w-400:#C6BCA0;
+  --w-500:#A79C7E; --w-600:#867C63; --w-700:#665E4A; --w-800:#464032; --w-900:#2A261D;
+
+  --gold:#C98B4B;
+
+  /* ---------- أدوار ---------- */
+  --brand:var(--c-500);
+  --brand-2:var(--c-400);
+  --ink:var(--e-500);
+  --ink-2:rgba(42,29,20,.72);
+  --ink-3:rgba(42,29,20,.52);
+  --paper:var(--w-100);
+  --paper-2:var(--w-200);
+  --paper-3:var(--w-50);
+  --dark:var(--e-800);
+  --deep:var(--e-600);
+  --line:rgba(42,29,20,.16);
+  --line-2:rgba(42,29,20,.30);
+  --line-dark:rgba(243,239,224,.22);
+
+  /* ---------- خطوط ---------- */
+  --font-display:Thmanyah,Almarai,system-ui,sans-serif;
+  --font-body:Almarai,system-ui,sans-serif;
+
+  /* ---------- سلّم الحجم ---------- */
+  --fs-mega:clamp(3rem,9vw,8.5rem);
+  --fs-display:clamp(2.4rem,6vw,5rem);
+  --fs-h1:clamp(2rem,4.2vw,3.4rem);
+  --fs-h2:clamp(1.6rem,3vw,2.5rem);
+  --fs-h3:clamp(1.2rem,1.9vw,1.55rem);
+  --fs-lead:clamp(1.05rem,1.5vw,1.3rem);
+  --fs-body:1rem;
+  --fs-sm:.875rem;
+  --fs-label:.72rem;
+
+  /* ---------- مسافات ---------- */
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:24px;
+  --sp-6:32px; --sp-7:48px; --sp-8:64px; --sp-9:96px; --sp-10:140px;
+
+  /* ---------- زوايا وظلال وحركة ---------- */
+  --r-0:0px; --r-sm:2px; --r-md:4px; --r-lg:8px; --r-full:999px;
+  --sh-1:0 1px 2px rgba(42,29,20,.08);
+  --sh-2:0 8px 24px rgba(42,29,20,.10);
+  --sh-3:0 24px 60px rgba(42,29,20,.18);
+  --ease:cubic-bezier(.22,.9,.28,1);
+  --dur:.45s;
+
+  --maxw:1240px;
+  --gutter:clamp(20px,4vw,64px);
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;font-family:var(--font-body);color:var(--ink);background:var(--paper);
+     font-size:var(--fs-body);line-height:1.8;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--font-display);line-height:1.15;margin:0;font-weight:700;letter-spacing:-.01em}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font-family:inherit}
+::selection{background:var(--brand);color:var(--paper)}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ترست سمارت · نظام التصميم</title>
+<link rel="stylesheet" href="assets/tokens.css">
+<style>
+body{background:var(--paper)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+header.top{background:var(--dark);color:var(--paper);padding:clamp(50px,7vw,90px) 0 clamp(40px,5vw,64px);margin-bottom:var(--sp-9)}
+header.top h1{font-size:var(--fs-display);font-weight:900}
+header.top p{color:rgba(243,239,224,.7);margin-top:14px;max-width:56ch}
+.eb{font-size:var(--fs-label);letter-spacing:.32em;font-weight:800;color:var(--brand-2);direction:ltr;display:block;margin-bottom:12px}
+section{margin-bottom:var(--sp-9)}
+section>h2{font-size:var(--fs-h2);font-weight:900;padding-bottom:14px;border-bottom:2px solid var(--brand);margin-bottom:var(--sp-6)}
+.note{font-size:var(--fs-sm);color:var(--ink-3);margin-bottom:var(--sp-5)}
+.ramp{display:grid;grid-template-columns:repeat(10,1fr);margin-bottom:var(--sp-5);border:1px solid var(--line)}
+.ramp i{aspect-ratio:1;display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;
+  font-size:10px;font-weight:800;font-style:normal;direction:ltr}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:var(--sp-5)}
+.card{border:1px solid var(--line);padding:var(--sp-5);background:var(--paper-3)}
+.card code{font-size:12px;color:var(--brand);direction:ltr;display:block;margin-top:6px}
+.spec{display:flex;align-items:baseline;gap:var(--sp-4);padding:14px 0;border-bottom:1px solid var(--line)}
+.spec .lbl{font-size:11px;font-weight:800;color:var(--ink-3);direction:ltr;width:120px;flex:none}
+.item{position:relative;padding-top:56px;border-top:2px solid var(--brand)}
+.item .mk{position:absolute;top:-2px;inset-inline-start:0;width:44px;height:44px;background:var(--brand);
+  color:var(--paper);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;direction:ltr}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--brand);color:var(--paper);
+  border:2px solid var(--brand);padding:14px 30px;font-weight:800;font-size:var(--fs-sm);cursor:pointer;transition:.4s var(--ease)}
+.btn:hover{background:transparent;color:var(--brand)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
+.band{background:var(--brand);color:var(--paper);display:flex;align-items:center;justify-content:space-between;padding:22px 30px}
+.band h3{font-size:var(--fs-h3);color:var(--paper);font-weight:900}
+.sp{display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap}
+.sp i{background:var(--c-200);display:block;position:relative}
+.sp i::after{content:attr(data-n);position:absolute;top:-20px;inset-inline-start:0;font-size:10px;color:var(--ink-3);font-style:normal;direction:ltr}
+.tx{padding:10px 0;border-bottom:1px dashed var(--line)}
+footer{background:var(--brand);color:var(--paper);padding:40px 0;margin-top:var(--sp-9)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <span class="eb">TRUST SMART · DESIGN SYSTEM v1.0</span>
+    <h1>نظام تصميم ترست سمارت</h1>
+    <p>أسلوب مطبعي ورقي: ورق كريمي، حبر إسبريسو، وتراكوتا كلون فعل. كل القيم هنا مصدرها ملف واحد
+      <code style="direction:ltr;color:var(--c-200)">assets/tokens.css</code> — أي تعديل في الهوية يبدأ منه.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section>
+  <h2>الألوان</h2>
+  <p class="note">ثلاثة سلالم: تراكوتا (اللون الأساسي)، إسبريسو (الحبر)، ورق (الحياد). الدرجة ٥٠٠ هي درجة العلامة في كل سلّم.</p>
+
+  <span class="eb">TERRACOTTA · تراكوتا</span>
+  <div class="ramp" id="r1"></div>
+  <span class="eb">ESPRESSO · إسبريسو</span>
+  <div class="ramp" id="r2"></div>
+  <span class="eb">PAPER · ورق</span>
+  <div class="ramp" id="r3"></div>
+
+  <div class="grid3">
+    <div class="card"><b dir="ltr" style="display:block;text-align:right">--brand</b><code>#8A3D27</code><p class="note" style="margin:6px 0 0">الأشرطة، الأزرار، البنود المرقّمة</p></div>
+    <div class="card"><b dir="ltr" style="display:block;text-align:right">--ink</b><code>#2A1D14</code><p class="note" style="margin:6px 0 0">النص الأساسي</p></div>
+    <div class="card"><b dir="ltr" style="display:block;text-align:right">--paper</b><code>#F3EFE0</code><p class="note" style="margin:6px 0 0">خلفية الصفحة</p></div>
+    <div class="card"><b dir="ltr" style="display:block;text-align:right">--dark</b><code>#150E08</code><p class="note" style="margin:6px 0 0">الأقسام الداكنة</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>الخطوط</h2>
+  <p class="note">ثمانية (Thmanyah) للعناوين، المُرعي (Almarai) للنصوص. الأحجام كلها <code style="direction:ltr">clamp()</code> تستجيب لعرض الشاشة.</p>
+  <div class="tx"><div class="spec"><span class="lbl">--fs-mega</span><span style="font-family:var(--font-display);font-size:var(--fs-mega);font-weight:900;line-height:1">نمو يُقاس</span></div></div>
+  <div class="tx"><div class="spec"><span class="lbl">--fs-h1</span><span style="font-family:var(--font-display);font-size:var(--fs-h1);font-weight:900">عنوان قسم رئيسي</span></div></div>
+  <div class="tx"><div class="spec"><span class="lbl">--fs-h2</span><span style="font-family:var(--font-display);font-size:var(--fs-h2);font-weight:900">عنوان شريط</span></div></div>
+  <div class="tx"><div class="spec"><span class="lbl">--fs-h3</span><span style="font-family:var(--font-display);font-size:var(--fs-h3);font-weight:800">عنوان بند</span></div></div>
+  <div class="tx"><div class="spec"><span class="lbl">--fs-lead</span><span style="font-size:var(--fs-lead);font-weight:300">فقرة تمهيدية بوزن خفيف تشرح الفكرة في سطرين.</span></div></div>
+  <div class="tx"><div class="spec"><span class="lbl">--fs-body</span><span>نص الجسم الافتراضي بارتفاع سطر ١٫٨ للقراءة المريحة بالعربي.</span></div></div>
+  <div class="tx"><div class="spec"><span class="lbl">--fs-label</span><span class="eb" style="margin:0">EYEBROW LABEL</span></div></div>
+</section>
+
+<section>
+  <h2>المسافات</h2>
+  <p class="note">سلّم مبني على ٨: من ٤ إلى ١٤٠ بكسل.</p>
+  <div class="sp" id="spscale"></div>
+</section>
+
+<section>
+  <h2>المكوّنات</h2>
+
+  <span class="eb">BAND · شريط العنوان</span>
+  <div class="band" style="margin-bottom:var(--sp-6)"><h3>عنوان القسم</h3>
+    <svg width="24" height="24" viewBox="0 0 44 44" style="color:var(--paper)"><path d="M22 0 26 18 44 22 26 26 22 44 18 26 0 22 18 18Z" fill="currentColor"/></svg></div>
+
+  <span class="eb">BUTTONS · الأزرار</span>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:var(--sp-6)">
+    <button class="btn">زر أساسي</button>
+    <button class="btn ghost">زر ثانوي</button>
+  </div>
+
+  <span class="eb">NUMBERED ITEM · بند مرقّم</span>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--sp-5);margin-bottom:var(--sp-6)">
+    <div class="item"><div class="mk">01</div><h3 style="font-size:var(--fs-h3);font-weight:800;margin-bottom:8px">عنوان البند</h3>
+      <p style="font-size:var(--fs-sm);color:var(--ink-2)">وصف قصير يشرح البند في سطر أو سطرين.</p></div>
+    <div class="item"><div class="mk">02</div><h3 style="font-size:var(--fs-h3);font-weight:800;margin-bottom:8px">عنوان البند</h3>
+      <p style="font-size:var(--fs-sm);color:var(--ink-2)">وصف قصير يشرح البند في سطر أو سطرين.</p></div>
+  </div>
+
+  <span class="eb">KPI · رقم</span>
+  <div style="border-top:2px solid var(--brand);padding-top:26px;display:flex;gap:60px;flex-wrap:wrap">
+    <div><b style="display:block;font-family:var(--font-display);font-size:3rem;font-weight:900;line-height:1;direction:ltr;text-align:right">742<sup style="font-size:.32em;color:var(--brand-2);vertical-align:.9em">+</sup></b>
+      <span style="font-size:var(--fs-sm);font-weight:700;color:var(--ink-3)">عميل</span></div>
+    <div><b style="display:block;font-family:var(--font-display);font-size:3rem;font-weight:900;line-height:1;direction:ltr;text-align:right">250<sup style="font-size:.32em;color:var(--brand-2);vertical-align:.9em">M+</sup></b>
+      <span style="font-size:var(--fs-sm);font-weight:700;color:var(--ink-3)">مشاهدة</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>الملمس والحركة</h2>
+  <div class="grid3">
+    <div class="card"><b>ملمس الورق</b><code>tex-plaster.jpg · opacity .16 · multiply</code>
+      <p class="note" style="margin:6px 0 0">طبقة ثابتة فوق الصفحة كلها تمنع الإحساس بالسطح المسطّح.</p></div>
+    <div class="card"><b>ملمس الحجر</b><code>tex-stone.jpg · opacity .10 · overlay</code>
+      <p class="note" style="margin:6px 0 0">للأقسام الداكنة والتراكوتا.</p></div>
+    <div class="card"><b>منحنى الحركة</b><code>cubic-bezier(.22,.9,.28,1)</code>
+      <p class="note" style="margin:6px 0 0">كل الانتقالات، ومدّتها <code style="display:inline">.45s</code>.</p></div>
+    <div class="card"><b>الظهور بالتمرير</b><code>.rv → .in</code>
+      <p class="note" style="margin:6px 0 0">إزاحة ٢٦px وشفافية، معطّلة مع <code style="display:inline">prefers-reduced-motion</code>.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>قواعد التحرير</h2>
+  <div class="grid3">
+    <div class="card"><b>العنوان: كلمة إلى كلمتين</b><p class="note" style="margin:6px 0 0">لا جمل طويلة في العناوين.</p></div>
+    <div class="card"><b>بلا شرطة طويلة</b><p class="note" style="margin:6px 0 0">أعد الصياغة بفاصلة أو نقطة.</p></div>
+    <div class="card"><b>بلا كلمة «وكالة»</b><p class="note" style="margin:6px 0 0">نقول شريك نمو، ونقول Growth Partner بالإنجليزي.</p></div>
+    <div class="card"><b>الأرقام لاتينية</b><p class="note" style="margin:6px 0 0">742 لا ٧٤٢، واتجاهها <code style="display:inline">ltr</code> دائماً.</p></div>
+  </div>
+</section>
+
+</div>
+
+<footer><div class="wrap" style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap">
+  <span>ترست سمارت · نظام التصميم ١٫٠</span>
+  <a href="site.html">→ الصفحة الرئيسية</a>
+</div></footer>
+
+<script>
+const steps=['50','100','200','300','400','500','600','700','800','900'];
+const ramps={r1:'c',r2:'e',r3:'w'};
+for(const [id,pre] of Object.entries(ramps)){
+  document.getElementById(id).innerHTML = steps.map(st=>{
+    const v=getComputedStyle(document.documentElement).getPropertyValue(`--${pre}-${st}`).trim();
+    const light = +st <= 300;
+    return `<i style="background:${v};color:${light?'#2A1D14':'#F3EFE0'}">${st}</i>`;
+  }).join('');
+}
+const sizes=[4,8,12,16,24,32,48,64,96,140];
+document.getElementById('spscale').innerHTML = sizes.map(n=>
+  `<i data-n="${n}" style="width:${n}px;height:${Math.max(n,10)}px"></i>`).join('');
+</script>
+</body>
+</html>
